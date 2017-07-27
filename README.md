@@ -110,3 +110,7 @@ Example:
 import mask from './path/to/indicator.js';
 // the rest is same as .vue version
 ```
+
+Q: why dont use a single `.js` file, using `stylesheet.insertRule(rule, index)` to inject css?
+
+A: 1. webpack is widely used in front-end project. 2. For simple project, you can just copy the css rules into your css file. 3. Get all the things done in a singel `.js` file is unnecessary, leave the style part for `.css`.
